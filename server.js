@@ -87,7 +87,7 @@ app.post('/register', (req, res) => {
       error = 'Something went wrong';
 
       if (err.code === 11000) {
-        error = 'That email is already takin, Please try another';
+        error = 'That email is already taken, Please try another';
       }
       return res.render('register', { error: error });
     }
